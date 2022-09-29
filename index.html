@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diaw Business Holding</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
   </head>
   <body>
-    <header class="pt-10 pb-36 text-white" style="background-image: url('/assets/cover.jpeg');background-size: cover;">
+    <header class="pt-10 pb-36 text-white" style="background-image: url('/assets/pexels-tima-miroshnichenko-7567520.jpg');background-size: cover;">
       <div class="container mx-auto px-4 lg:px-2">
         <nav class="flex justify-between">
-          <a href="/" class="w-10 h-10">
-            <img src="/assets/logo-dbh.png" class="object-contain" alt="Logo">
-          </a>
+          <div class="flex space-x-2">
+            <a href="/" class="w-12 h-12">
+              <img src="/assets/logo-dbh.png" class="object-cover" alt="Logo">
+            </a>
+            <p class="text-xl animate-pulse font-bold lg:hidden">Diaw Business Holding</p>
+          </div>
           <input type="checkbox" id="menu-toggler" class="lg:hidden">
           <span class="text-4xl lg:hidden" id="menu-bars" >
             <i class="las la-bars bars"></i>
@@ -29,31 +33,28 @@
             <a href="#met" class="ml-4 text-3xl lg:text-base mb-6 lg:mb-0">Métiers</a>
           </div>
         </nav>
-        <div class="mt-24 flex items-center ">
-          <div class="w-full lg:w-1/2">
+        <div class="mt-24 flex items-center">
+          <div class="w-full flex flex-col">
             <h1 class="text-4xl lg:text-5xl font-bold">Your business ally. The power on your side.</h1>
             <p class="my-4">
               Une entreprise sénégalaise spécialisée dans les outilis de gestion d'entreprise.
             </p>
-            <a href="#apd" class="transition duration-300 bg-blue-400 hover:bg-white hover:text-blue-400 text-white mt-5 btn">Voir description</a>
+            <a href="#apd" class="transition duration-300 bg-blue-300 hover:bg-white hover:text-blue-300 text-white mt-5 mx-auto btn">Voir description</a>
           </div>
-          <!-- <div class="hidden lg:flex w-1/2 flex justify-end ">
-            <img src="/assets/server.svg" alt="" class="hero__img hidden lg:flex">
-          </div> -->
         </div>
       </div>
     </header>
-    
-    <section class="bg-blue-400 py-24" id="obj">
+    <section class="bg-blue-100 py-16" id="obj">
       <div class="container mx-auto px-4 lg:px-0">
-        <h2 class="text-center text-white font-bold text-2xl lg:text-3xl mb-16">NOS OBEJCTIFS, VISIONS ET VALEURS</h2>
+        <h2 class="text-left text-white font-bold text-2xl lg:text-3xl mb-2">NOS OBEJCTIFS, VISIONS ET VALEURS</h2>
+        <div class="w-32 h-2 bg-blue-300 mb-16 rounded-xl"></div>
         <div  class="flex flex-wrap -mx-4 px-2">
           <div class="w-full lg:w-1/3 px-4">
-            <div class="bg-white my-4 lg:h-full lg:my-0 pb-20 rounded-xl flex flex-col items-center ">
-              <img class="w-full h-60 rounded-xl mb-6" src="/assets/objectif.jpeg" alt="">
-              <span class="font-bold text-blue-400 text-lg">Objectifs</span>
+            <div class="bg-white my-4 lg:h-full lg:my-0 pb-20 flex flex-col items-left">
+              <img class="w-full h-60 mb-6" src="/assets/pexels-markus-winkler-4052198.jpg" alt="">
+              <span class="font-bold text-blue-400 text-lg px-4 animate-pulse">Objectifs</span>
               
-              <p class="text-center leading-10 mt-6">
+              <p class="text-left leading-10 mt-6 px-4">
                 Vous accompagner dans le processus de dynamisation ou de 
                 redynamisation de votre stratégie Marketing, accroitre votre 
                 visiblite et notoriété. Vous assistez et vous guidez dans vos 
@@ -63,11 +64,11 @@
             </div>
           </div>
           <div class="w-full lg:w-1/3 px-4">
-            <div class="bg-white my-4 lg:h-full lg:my-0 pb-20 rounded-xl flex flex-col items-center ">
-              <img class="w-full h-60 rounded-xl mb-6" src="/assets/vision.jpeg" alt="">
-              <span class="font-bold text-blue-400 text-lg">Visions</span>
+            <div class="bg-white my-4 lg:h-full lg:my-0 pb-20 flex flex-col items-left ">
+              <img class="w-full h-60 mb-6" src="/assets/pexels-rfstudio-3810788.jpg" alt="">
+              <span class="font-bold text-blue-400 text-lg px-4 animate-pulse">Visions</span>
               
-              <p class="text-center leading-10 mt-6">
+              <p class="text-left leading-10 mt-6 px-4">
                 Devenir une entreprise internationale axée 
                 sur la diversification et la création de valeur
                  ajoutée dans nos services et offres prête à conquérir
@@ -77,11 +78,11 @@
             </div>
           </div>
           <div class="w-full lg:w-1/3  px-4">
-            <div class="bg-white my-4 lg:h-full lg:my-0 pb-20 rounded-xl flex flex-col items-center ">
-              <img class="w-full h-60 rounded-xl mb-6" src="/assets/valeur.png" alt="">
-              <span class="font-bold text-blue-400 text-lg">Valeurs</span>
+            <div class="bg-white my-4 lg:h-full lg:my-0 pb-20 flex flex-col items-left">
+              <img class="w-full h-60 mb-6" src="/assets/pexels-pavel-danilyuk-7654609.jpg" alt="">
+              <span class="font-bold text-blue-400 text-lg px-4 animate-pulse">Valeurs</span>
               
-              <p class="text-center leading-10 mt-6">
+              <p class="text-left leading-10 mt-6 px-4">
                 Apporter une meilleure expérience à nos partenaires en les plaçant au cœur de nos préoccupation.
                 Accompagnement & Suivie <br>
                 Valeur client <br>
@@ -224,5 +225,6 @@
     </footer>
 
     <script type="module" src="/main.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
   </body>
 </html>

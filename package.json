@@ -11,5 +11,8 @@
     "postcss": "^8.3.5",
     "tailwindcss": "^2.2.4",
     "vite": "^2.4.2"
+  },
+  "dependencies": {
+    "flowbite": "^1.5.3"
   }
 }
