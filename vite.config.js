@@ -6,10 +6,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        about: resolve(__dirname, 'nested/about.html'),
-        objectif: resolve(__dirname, 'nested/objectif.html'),
-        offre: resolve(__dirname, 'nested/offre.html'),
-        metier: resolve(__dirname, 'nested/metier.html')
+        about: resolve(__dirname, 'about/index.html'),
+        metier: resolve(__dirname, 'metier/index.html'),
+        offre: resolve(__dirname, 'offre/index.html'),
+        objectif: resolve(__dirname, 'objectif/index.html')
       }
     }
   }
